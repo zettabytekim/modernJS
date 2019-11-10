@@ -4,5 +4,5 @@ function fact(n) {
 }
 
 for (var i = 2; i < 10; i++) {
-    console.log(i + "! = " + fact(i));;
+    console.log(i + "! = " + fact(i));
 }
