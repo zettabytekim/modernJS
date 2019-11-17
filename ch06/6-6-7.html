@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Canvas의 기본</title>
+	<script>
+		window.onload = function() {
+			// canvas 요소 가져오기
+			var canvas = document.getElementById("mycanvas");
+			// canvas 랜더링 컨텍스트 가져오기
+			var ctx = canvas.getContext("2d");
+			var img = new Image();
+			img.onload = function() {
+				ctx.drawImage(img, 0, 0);
+			};
+			img.src = "./cat.jpg";
+		};
+	</script>
+</head>
+<body>
+	<canvas id="mycanvas" width="640" height="400"></canvas>
+</body>
+</html>
